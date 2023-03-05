@@ -12,8 +12,9 @@ public class Student extends Human{
     //credit field
     private int credits;
     //default constructor
-    public Student(String name, int age) {
-        super(name, age);
+    public Student() {
+        super("", 0);
+        this.credits = 0;
     }
 
     public Student(String name, int age, int credits) {
