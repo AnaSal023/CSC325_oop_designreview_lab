@@ -27,4 +27,5 @@ public class Senior extends Student {
     public void setCredits(int credits) {
         this.credits = credits;
     } 
+    
 }

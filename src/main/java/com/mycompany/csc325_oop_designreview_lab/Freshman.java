@@ -15,5 +15,16 @@ public class Freshman extends Student{
     public Freshman(String name, int age, int credits){
         super(name, age, credits);
     }
-
+    
+    @Override
+    public String toString(){
+        if (this.getAddress() == null) {
+            this.setAddress("No address was enteres");
+        }
+        return "Name: " + this.getName() + "\n" +
+                "Age: " + this.getAge() + "\n" +
+                "GPA: " + + this.getGpa() + "\n" +
+                "Credits: " + this.getCredits() + "\n" +
+                "Address: " + this.getAddress() + "\n";        
+    }
 }
