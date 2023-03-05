@@ -23,7 +23,7 @@ public class MainClass {
 		
                 // ToDo 10: Add a toString method for Senior class
                 
-		Freshman std1= new Student("James", 20, 12); // name, age, credits
+		Freshman std1 = new Student("James", 20, 12); // name, age, credits
                 
                 Senior std2 = new Student("John", 30, 90);
 		
