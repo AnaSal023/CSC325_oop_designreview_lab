@@ -13,20 +13,17 @@ import java.util.Scanner;
 public class MainClass {
 	
 	public static void main(String[] args) throws Exception {
-            
+            //instance to hold the entered gpa by user
             double scannerGPA;
                 
 		Student std1 = new Freshman("James", 20, 12); // name, age, credits
                 
                 Student std2 = new Senior("John", 30, 90);
-		
-		// ToDo 11: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
-		
+                
                 //trying if a senior student with credits less than 85 will get an error
-                Student std3;
-                try { std3 = new Senior("Mary", 40, 65); }
-                catch (Exception e){ 
+                Student std3 = null;
+                try { std3 = new Senior("Mary", 30, 65); }
+                catch (Exception e) {
                     System.out.println(e);
                 }
                 
@@ -42,13 +39,13 @@ public class MainClass {
                 //printing student gpa
                 System.out.println("Student 2 GPA: " + std2.getGpa());
                 
+                //print students information
 		System.out.println(std1);
                 
                 System.out.println(std2);
 		
-		// ToDo 12: add comments and explain your code
-		
-		// ToDo 13: submit using a pull request.
+                System.out.println(std3);
+
 	}
 
 }
