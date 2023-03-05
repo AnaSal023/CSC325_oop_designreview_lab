@@ -10,7 +10,7 @@ package com.mycompany.csc325_oop_designreview_lab;
  */
 public class MainClass {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// ToDo 5: Fix the error
 		
 		// ToDo 6: Fix the constructor of Student class
@@ -23,9 +23,9 @@ public class MainClass {
 		
                 // ToDo 10: Add a toString method for Senior class
                 
-		Freshman std1 = new Student("James", 20, 12); // name, age, credits
+		Freshman std1 = new Freshman("James", 20, 12); // name, age, credits
                 
-                Senior std2 = new Student("John", 30, 90);
+                Senior std2 = new Senior("John", 30, 90);
 		
 		// ToDo 11: Set the gpa of the student using the scanner and user
 		// 			input and then print the output.

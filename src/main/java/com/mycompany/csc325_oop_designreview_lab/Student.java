@@ -13,13 +13,13 @@ public class Student extends Human{
     //GPA field
     private double gpa;
     //credit field
-    private double credits;
+    private int credits;
     //default constructor
-    public Student(String name, short age) {
+    public Student(String name, int age) {
         super(name, age);
     }
 
-    public Student(double credits, String name, short age) {
+    public Student(String name, int age, int credits) {
         super(name, age);
         this.credits = credits;
     }
@@ -49,11 +49,11 @@ public class Student extends Human{
     }
 	// ToDo 4: Add comments to your code
     //created get and set methods for credits field
-    public double getCredits() {
+    public int getCredits() {
         return credits;
     }
 
-    public void setCredits(double credits) {
+    public void setCredits(int credits) {
         this.credits = credits;
     }
     
