@@ -6,20 +6,32 @@ package com.mycompany.csc325_oop_designreview_lab;
 
 /**
  *
- * @author anasa
+ * @author Ana
  */
 public class Freshman extends Student{
+    /**
+     * default constructor
+     */
     public Freshman() {
         super("", 0, 0);
     }
+    /**
+     * constructor sets name, age, and credits to the superclass class Student 
+     * @param name
+     * @param age
+     * @param credits 
+     */
     public Freshman(String name, int age, int credits){
         super(name, age, credits);
     }
-    
+    /**
+     * override to string method, print all the student information
+     * @return 
+     */
     @Override
     public String toString(){
         if (this.getAddress() == null) {
-            this.setAddress("No address was enteres");
+            this.setAddress("No address was entered");
         }
         return "Name: " + this.getName() + "\n" +
                 "Age: " + this.getAge() + "\n" +

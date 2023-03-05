@@ -6,11 +6,22 @@ package com.mycompany.csc325_oop_designreview_lab;
 
 /**
  *
- * @author anasa
+ * @author Ana
  */
 public class Senior extends Student {
-    private int credits;
-    
+    /**
+     * default constructor
+     */
+    public Senior(){
+        super("", 0, 0);
+    }
+    /**
+     * constructor sets name, age, and credits to the superclass class Student
+     * @param name
+     * @param age
+     * @param credits
+     * @throws Exception 
+     */
     public Senior(String name, int age, int credits) throws Exception {
         super(name, age, credits);
         if (credits < 85){
@@ -19,19 +30,14 @@ public class Senior extends Student {
             throw e;
         }  
     }
-
-    public int getCredits() {
-        return credits;
-    }
-
-    public void setCredits(int credits) {
-        this.credits = credits;
-    } 
-    
+    /**
+     * override to string method, print all the student information
+     * @return 
+     */
     @Override
     public String toString(){
         if (this.getAddress() == null) {
-            this.setAddress("No address was enteres");
+            this.setAddress("No address was entered");
         }
         return "Name: " + this.getName() + "\n" +
                 "Age: " + this.getAge() + "\n" +
