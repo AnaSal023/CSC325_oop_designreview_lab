@@ -8,6 +8,6 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author anasa
  */
-class Freshman {
+public class Freshman extends Student{
     
 }

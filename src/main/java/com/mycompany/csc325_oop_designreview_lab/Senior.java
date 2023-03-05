@@ -8,6 +8,6 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author anasa
  */
-class Senior {
+public class Senior extends Student {
     
 }
