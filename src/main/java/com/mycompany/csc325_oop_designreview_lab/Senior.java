@@ -28,4 +28,15 @@ public class Senior extends Student {
         this.credits = credits;
     } 
     
+    @Override
+    public String toString(){
+        if (this.getAddress() == null) {
+            this.setAddress("No address was enteres");
+        }
+        return "Name: " + this.getName() + "\n" +
+                "Age: " + this.getAge() + "\n" +
+                "GPA: " + + this.getGpa() + "\n" +
+                "Credits: " + this.getCredits() + "\n" +
+                "Address: " + this.getAddress() + "\n";        
+    }
 }
