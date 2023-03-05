@@ -4,6 +4,8 @@
  */
 package com.mycompany.csc325_oop_designreview_lab;
 
+import java.util.Scanner;
+
 /**
  *
  * @author MoaathAlrajab
@@ -27,6 +29,18 @@ public class MainClass {
                 catch (Exception e){ 
                     System.out.println(e);
                 }
+                
+                //set up scanner object instance
+                Scanner scanner = new Scanner(System.in);
+                
+                //asking student 2 to enter their gpa 
+                System.out.println("Student 2: please enter your GPA");
+                //p[assing the entered value to scanner GPA instance
+                scannerGPA = Double.parseDouble(scanner.nextLine());
+                //setting student gpa to scanner gpa instance
+                std2.setGpa(scannerGPA);
+                //printing student gpa
+                System.out.println("Student 2 GPA: " + std2.getGpa());
                 
 		System.out.println(std1);
                 
